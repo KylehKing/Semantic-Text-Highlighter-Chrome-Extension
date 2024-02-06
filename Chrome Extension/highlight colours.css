@@ -1,0 +1,38 @@
+.relevant-highlight {
+    background-color: green;
+}
+.highlight {
+    background-color: green;
+}
+.highlight-yellow {
+    background-color: yellow;
+}
+
+.highlight-green {
+    background-color: green;
+}
+.highlight-rating-0 {
+    /* No highlight for rating 0 */
+}
+
+.highlight-rating-1 {
+    background-color: #fcdc5b; /* Orange */
+}
+
+.highlight-rating-2 {
+    background-color: #fcec5b; /* Lighter Orange */
+}
+
+.highlight-rating-3 {
+    background-color: #ecfc5b; /* Yellowish */
+}
+
+.highlight-rating-4 {
+    background-color: #d6fc5b; /* Light Green */
+}
+
+.highlight-rating-5 {
+    background-color: #91fc5b; /* Olive Green */
+}
+
+

@@ -1,4 +1,5 @@
-const USER_API_KEY = "<Deepinfra API key>"// Api Key
+const USER_API_KEY = "<Deepinfra API key"// Api Key
+const MODEL_NAME = "mistralai/Mixtral-8x7B-Instruct-v0.1" // "mistralai/Mixtral-8x7B-Instruct-v0.1" "mistralai/Mixtral-8x7B-Instruct-v0.1"
 
 
 function highlightWord(word) {
@@ -138,7 +139,7 @@ User Query: "${userQuery}"`;
 
     // Prepare the body using the user query and the input text content
     const bodyContent = {
-        model: "mistralai/Mixtral-8x7B-Instruct-v0.1",
+        model: MODEL_NAME,
         messages: [{role: "system", content: "Be a helpful assistant"}, {role: "user", content: prompt}],
         max_tokens: 2000
     };
@@ -245,11 +246,12 @@ async function assessRelevancy(textNode, userQuery) {
 
 User query: "${userQuery}"
 
+If the text is not relevant to the query return a value of 0.
 Respond ONLY with the integer rating and NOTHING ELSE`;
 
     // Prepare the body using the user query and the input text content
     const bodyContent = {
-        model: "mistralai/Mixtral-8x7B-Instruct-v0.1",
+        model: MODEL_NAME,
         messages: [{ role: "system", content: "Be a helpful assistant" }, { role: "user", content: prompt }],
         max_tokens: 2
     };
